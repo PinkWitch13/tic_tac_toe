@@ -1,9 +1,13 @@
 def board():
-    b = [[" ", " ", " "], 
-         [" ", " ", " "],
-         [" ", " ", " "]]
-    for a in b:
-        b = "".join(a) + "\n"
-    return b
+    b = [["_|", "_|", "_"], 
+         ["_|", "_|", "_"],
+         [" |", " |", " "]]
+    
+    ub =[]
 
-#board()
+    for f in b:
+        f = ''.join(f) + '\n'
+        ub.append(f)
+
+    b = "".join(ub)
+    print(b)
