@@ -1,0 +1,51 @@
+"""colorama module allow me to play with
+    colours of an otput in terminal. BACK (AnsiBack())- 
+    background colour, FORE (AnsiFore()) - font colore. 
+    RESET to remove all efects. STYLE (AnsiStyle()) 
+    - ???. 
+    Available colours: BLACK, WHITE, RED, 
+    BLUE, YELLOW, GREEN, MAGENTA, CYAN, 
+    LIGHTBLACK_EX, LIGHTRED_EX, 
+    LIGHTGEEN_EX, LIGHTYELLOW_EX, 
+    LIGHTBLUE_EX, LIGHTMAGENTA_EX,
+    LIGHTCYAN_EX, LIGHTWHITE_EX.
+"""
+#from colorama import Fore, Back, Style, Cursor
+
+# print(Fore.RESET + Back.RESET 
+#       + Style.DIM + "User 1")
+
+"""ANSI escape codes:
+
+ -basic colour codes:
+ RED = '\033[91m'
+ GREEN = '\033[92m'
+ BLUE = '\033[94m'
+ RESET =  '\033[0m'  - back colour to default
+
+ Examples:
+
+ python print(f"{RED}Error:File not found{RESET}")
+ python PRINT(f"{GREEN}success: Data saved{RESET}")
+ python print(f"{BLUE}Info: Processing...{RESET}")
+
+class Colors:
+    def __init__(self):
+    #Regular colors:
+        self.red = '\033[91m'
+        self.green = '\033[92m'
+        self.blue = '\033[94m'
+        self.yellow = '\033[93m'
+        self.magenta = '\033[95m'
+        self.cyan = '\033[96m'
+        self.white = '\033[97m'
+        self.reset = '\033[0m'
+
+    def colorize(self, text, colou\r):
+    """ Add color to text, auto reset """
+        color_code = getattr(self, color.lower(), '')
+        return f"{color_code}{text}{self.reset}"
+
+
+#create an instance:
+colors = Colors
